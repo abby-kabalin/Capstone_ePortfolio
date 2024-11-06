@@ -5,31 +5,40 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width,initial-scale=1" name="viewport">
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
-	<title>CSCI 426 - Senior Design Capstone - Fall 2023</title>
+	<title>CSCI 426 - Senior Design Capstone - Fall 2024</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com" rel="preconnect">
 	<link rel="stylesheet" href="../../assets/css/wa_style.css">
 	<link rel="stylesheet" href="../../assets/css/navstyle.css">
 	<link href="https://fonts.gstatic.com" rel="preconnect">
 	<style>
-	table, th, td {
-  		border: 1px solid black;
-  		border-collapse: collapse;
-	}
-	th {background-color: lightblue;}
-	td {padding: 15px; font-size: 14px;}
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		th {
+			background-color: lightblue;
+		}
+
+		td {
+			padding: 15px;
+			font-size: 14px;
+		}
 	</style>
 </head>
 
 <body>
 
 
-	//<div class="main">
+	<div class="main">
 
 		<div id="root">
 
 			<div class="sidenav">
-				<img src="../../assets/img/ATG_logo.png" width="110" height="110"
+				<img src="assets/img/WhereToRoam_logo.png" width="110" height="110"
 					style="padding-left: 10px; padding-top: 0px;">
 				<a href="./overview.html">Overview</a>
 				<a href="./user_feedback.html">User Feedback</a>
@@ -51,7 +60,7 @@
 
 							<a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1f5vq29"
 								href="/courses/cse440/22sp/" tabindex="0">
-								<div class="MuiBox-root css-0">CSCI 426 - Software Design & Dev I - Fall 2023</div>
+								<div class="MuiBox-root css-0">CSCI 426 - Software Design & Dev I - Fall 2024</div>
 								<span class="MuiTouchRipple-root css-w0pj6f">
 								</span>
 							</a>
@@ -77,57 +86,200 @@
 						<div class="MuiBox-root css-qwy28t" role="main">
 
 
-							<h1>Star Trails</h1>
+							<h1>Where to Roam</h1>
 							<h2 id="mission-stmt">Requirements Specification</h2>
 							<div class="MuiBox-root css-m507i9">
-								<p class="MuiTypography-root MuiTypography-body1 css-lj8hfv">Using the feedback we gathered from our end users as described in the Early Design section of this site, we then set out to define, categorize and prioritize the requirments for our system. The following tables highlights the highest priority functional requirements, data requirements, software and hardware requirements. Note that 1 represents the highest priority and 5 represents the lowest priority.</p>
+								<p class="MuiTypography-root MuiTypography-body1 css-lj8hfv">Based on our analysis of
+									user feedback, we have developed a comprehensive list of
+									prioritized requirements for our system. These requirements are categorized into
+									functional, data, software, and hardware components. To ensure clarity and effective
+									implementation, we have assigned priority levels ranging from 1 to 5, where 1
+									represents the highest priority and 5 represents the lowest priority.</p>
 								<br>
 
 								<table>
-									<caption style="color: darkblue; font-size: 20px;"> Functional Requirements</caption>
- 									<tr>
-    									<th>Category</th>
-    									<th>Description</th>
-    									<th>Priority</th>
-  									</tr>
-  									<tr>
-    									<td>Leaderboard</td>
-    									<td>Users should be able to view a leaderboard.</td>
-    									<td>1</td>
-  									</tr>
-  
+									<caption style="color: darkblue; font-size: 20px;"> Functional Requirements
+									</caption>
+									<tr>
+										<th>Category</th>
+										<th>Description</th>
+										<th>Priority</th>
+									</tr>
+									<tr>
+										<td>Extract</td>
+										<td>Users should be able to download a PDF of the data.</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Extract</td>
+										<td>Users should be able to download a PNG of the data.</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Extract</td>
+										<td>Users should be able to download a PPT file of the data.</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Extract</td>
+										<td>Users should be able to download a basic infographic of all data.</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Query</td>
+										<td>Users should be able to sort data with dropdown menus.</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Query</td>
+										<td>Users should be able to sort data by county.</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>View</td>
+										<td>Users should be able to update data after selection.</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Use</td>
+										<td>Users should be able to generate a bar chart with selected data.</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Use</td>
+										<td>Users should be able to generate a line plot with selected data.</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Use</td>
+										<td>Users should be able to generate a scatter plot with selected data.</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Trace</td>
+										<td>Users should be able to use a breadcrumbs hyperlinked path to allow for a
+											trace through user's route to their location</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td>View</td>
+										<td>Users should be able to use toggles within the dashboard to filter data.
+										</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td>Query</td>
+										<td>Users should be able to search though data.</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>Query</td>
+										<td>Users should be able to compare and contrast data amoungst counties.</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>View</td>
+										<td>Users should be able to see resident attitude data displayed on dashboard.
+										</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>View</td>
+										<td>Users should be able to see description of what data is being displayed, for
+											example county name, community size, region, etc.</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>View</td>
+										<td>Users should be able to display data via time series.</td>
+										<td>4</td>
+									</tr>
+									<tr>
+										<td>Use</td>
+										<td>Users should be able to use an interactable banner as a home for all major
+											toggles, filters and search.</td>
+										<td>4</td>
+									</tr>
+									<tr>
+										<td>View</td>
+										<td>Users should be able to customize visualization colors.</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>Use</td>
+										<td>Users should be able to walk-through a tutorial on first visit to dashboard
+											that walks them through basic functionalities of the dashboard.</td>
+										<td>5</td>
+									</tr>
+
 								</table>
 								<br>
 								<br>
 								<table>
 									<caption style="color: darkblue; font-size: 20px;"> Data Requirements</caption>
- 									<tr>
-    									<th>Category</th>
-    									<th>Description</th>
-    									<th>Priority</th>
-  									</tr>
-  									<tr>
-    									<td>Profile</td>
-    									<td>User name and password.</td>
-    									<td>1</td>
-  									</tr>
-  
+									<tr>
+										<th>Category</th>
+										<th>Description</th>
+										<th>Priority</th>
+									</tr>
+									<tr>
+										<td>Available</td>
+										<td>Resident Attitude Data - Region</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Available</td>
+										<td>Resident Attitude Data - Community Overcrowded</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Available</td>
+										<td>Resident Attitude Data - Benefits</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Available</td>
+										<td>Resident Attitude Data - State Overcrowded</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Available</td>
+										<td>Resident Attitude Data - Promotion Benefits</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Available</td>
+										<td>Resident Attitude Data - Life Quality</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Available</td>
+										<td>Resident Attitude Data - Community Size</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>Available</td>
+										<td>Resident Attitude Data - Date</td>
+										<td>1</td>
+									</tr>
 								</table>
 								<br>
-								<p><h3 style="color: darkblue; font-size: 20px;">Hardware and Software requirements</h3>
-									We also indentied the following initial hardware and software requirements for our system:
-									<ul>
-										<li> Req 1 </li>
-										<li> Req 2 </li>
-										<li> Req 3 </li>
-									</ul>
+								<p>
+								<h3 style="color: darkblue; font-size: 20px;">Hardware and Software requirements</h3>
+								We also indentied the following initial hardware and software requirements for our
+								system:
+								<ul>
+									<li> Physical access to one of the ITRR computers </li>
+									<li> Resident Attitude Data </li>
+									<li> Tableau Subscription </li>
+								</ul>
 								</p>
 
 
 
 							</div>
 
-								</div>
+						</div>
 
 </body>
 
