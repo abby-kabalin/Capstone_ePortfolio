@@ -72,58 +72,86 @@
 							<h1>Systems Modeling</h1>
 
 							<div class="MuiBox-root css-m507i9">
-								<p class="MuiTypography-root MuiTypography-body1 css-lj8hfv">To model other critical
-									aspects of our system beyone the user interface, we created a swimlane diagram and a
-									state transition network. Each are briefly described and pictured below.
+								<p class="MuiTypography-root MuiTypography-body1 css-lj8hfv">To model our system beyond
+									the aspects of the user interface, we developed a sequence diagram and a dialog map.
 
 								</p>
 							</div>
 
-							<h3>Swimlane Diagram </h3>
-							<p>A swimlane diagram depicts ... It is useful for illustrating ... Below is an annotated
-								illustration of our swimlane diagram.
+							<h3>Sequence Diagram </h3>
+							<p>We chose a sequence diagram because this diagram represents the flow of operations and
+								interactions between different aspects of the dashboard.. It provides a dynamic view of
+								the system by illustrating how each function operates with one another and in what
+								order. The sequence diagram helped us visually understand how the system will interact
+								with each user.
 							<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
 								<div class="MuiBox-root css-1vp8jwk">
 
 									<div class="MuiBox-root css-1j8t7mm">
 										<div
 											class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
-											<center><img src="./images/PrototypeEvent.png"
-													style="max-height:400px;max-width:100%">
-												<img src="./images/eventSSDalton.png"
-													style="max-height:400px;max-width:100%">
+											<div style="display: flex; justify-content: space-between;"></div>
+											<center><img src="./images/sequence.png"
+													style="max-height:1000px;max-width:100%">
 											</center>
 											<figcaption style="font-size: 14px;">
-												<center><em>Model 1. Swimlane Diagram</em></center>
+												<center><em>Sequence Diagram</em></center>
 											</figcaption>
-
-											<p>Brief description of what swimlane diagram above shows... </p>
-
+											<ul>
+												<li>A. Landing Page - Displays the various counties and provides
+													navigation to the About Page and our Main Visualization Page
+												</li>
+												<li>B. Visualization Page - Shows the users the data they’ve
+													selected
+													for their chosen county and how they can filter their chosen
+													data</li>
+												<li>C. Database Retrieval - Demonstrates how the user will
+													create a
+													query which will call to the database for the results and
+													return
+													them to the dashboard.</li>
+												<li>D. Export Page - Users have the ability to export their
+													selected
+													data from the dashboard to their chosen file-type.</li>
+											</ul>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<h3>State Transition Diagram</h3>
-							<p>A state transition diagram depicts ... It is useful for illustrating ... Below is an
-								annotated illustration of our state transition diagram.
+							<h3>Dialog Map</h3>
+							<p>We chose a Dialog Map Model to represent our system. A dialog map provides a high-level
+								view of a proposed or actual user interface, showing the various display elements and
+								possible navigation pathways between them (Wasserman 1985; Wiegers 1996). Dialog maps
+								are often used in the realm of software engineering to help organize requirements and
+								visualize decisions a user can make when using the system.
 							<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
 								<div class="MuiBox-root css-1vp8jwk">
 
 									<div class="MuiBox-root css-1j8t7mm">
 										<div
 											class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
-											<center><img src="./images/PrototypeEvent.png"
-													style="max-height:400px;max-width:100%">
-												<img src="./images/eventSSDalton.png"
-													style="max-height:400px;max-width:100%">
+											<center><img src="./images/dialog.png"
+													style="max-height:800px;max-width:100%">
 											</center>
 											<figcaption style="font-size: 14px;">
-												<center><em>Model 2. State Transition Diagram</em></center>
+												<center><em>Dialog Map</em></center>
 											</figcaption>
-
-											<p>Brief description of what state transition diagram above shows... </p>
-
+											<ul>
+												<li>A. Landing Page - Provides a hub for all users to find out more
+													information
+													about the project, select various counties, and navigate to the main
+													visual page.</li>
+												<li>B. Main Visual Page - Demonstrates how the users makes selection on
+													what
+													data they want to see and then the dashboards state transitions to
+													display the appropriate visual on the main page. </li>
+												<li>C. Print Report/Visual - Provides a way for the user to export and
+													save
+													the
+													visuals that they have displayed on the dashboard.
+												</li>
+											</ul>
 										</div>
 									</div>
 								</div>
